@@ -21,3 +21,11 @@ if start <= now <= end:
     st.write("現在、勤務時間中です")
 else :
     st.write("現在オフです。自由時間を楽しみましょう")
+
+# "Say hello"というキャプションのボタンを作成する
+if st.button('Say hello'):
+    # ボタンが押されればこちらが表示される
+    st.write('Why hello there')
+else:
+    # ボタンが押されなければこちらが表示される
+    st.write('Goodbye')
