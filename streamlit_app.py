@@ -34,7 +34,8 @@ else:
     st.write('Goodbye')
 
 
-
+age = st.slider("How old are you?", 0, 130, 25)
+st.write("I'm ", age, "years old")
 
 # ランダムなデータを挿入したデータフレームを生成する(3次元の点×200点)
 df_random = pd.DataFrame(np.random.randn(200, 3), columns=['a', 'b', 'c'])
