@@ -50,3 +50,10 @@ chart_data = pd.DataFrame(
      columns=['a', 'b', 'c'])
 
 st.line_chart(chart_data)
+
+option = st.selectbox(
+    "How would you like to be contacted?",
+    ("Email", "Home phone", "Mobile phone"),
+)
+
+st.write("You selected:", option)
