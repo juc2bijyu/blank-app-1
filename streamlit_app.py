@@ -42,3 +42,6 @@ df_random = pd.DataFrame(np.random.randn(200, 3), columns=['a', 'b', 'c'])
 c = alt.Chart(df_random).mark_circle().encode(x='a', y='b', size='c', color='c', tooltip=['a', 'b', 'c'])
 # 生成したチャートを表示
 st.write('Chart:', c)
+
+values = st.slider('Select a range of values', 0.0, 100.0, (25.0, 75.0))
+
